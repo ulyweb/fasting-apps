@@ -1,23 +1,58 @@
 
 body {
-  font-family: sans-serif;
-  margin: 2em;
-  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f3f3f3;
   color: #222;
+  padding: 1rem;
 }
-.dark {
-  background: #111;
-  color: #ddd;
+.dark-mode {
+  background: #121212;
+  color: #eee;
 }
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.timer-panel, .dashboard {
-  margin-top: 2em;
+header .header-controls {
+  display: flex;
+  gap: 1rem;
+}
+main {
+  max-width: 800px;
+  margin: auto;
+}
+section {
+  margin: 2rem 0;
+}
+input, select, button {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  display: block;
+  width: 100%;
+}
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  margin-top: 1rem;
+}
+.logout-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
 }
 canvas {
-  margin-top: 1em;
-  background: #fff;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 0.9rem;
+  }
+  canvas {
+    width: 100% !important;
+  }
 }
