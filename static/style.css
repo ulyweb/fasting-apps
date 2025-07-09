@@ -1,0 +1,23 @@
+
+body {
+  font-family: sans-serif;
+  margin: 2em;
+  background: #f0f0f0;
+  color: #222;
+}
+.dark {
+  background: #111;
+  color: #ddd;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timer-panel, .dashboard {
+  margin-top: 2em;
+}
+canvas {
+  margin-top: 1em;
+  background: #fff;
+}
