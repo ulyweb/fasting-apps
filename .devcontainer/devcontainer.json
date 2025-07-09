@@ -1,0 +1,13 @@
+
+{
+  "name": "Fasting Tracker",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "fasting-tracker",
+  "workspaceFolder": "/app",
+  "forwardPorts": [5000],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "pip install -r requirements.txt || true",
+  "remoteUser": "root"
+}
